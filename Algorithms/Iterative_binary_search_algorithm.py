@@ -8,16 +8,16 @@ def iterativeBinarySearch(list, target):
     while first <= last:
         # Updates the midpoint in the search space
         # first + (last - first) // 2, is used rather than, (last + first) // 2, in case of integer overflow
-        mid = first + (last - first) // 2
+        midpoint = first + (last - first) // 2
         # Returns index of target if found
-        if target == list[mid]:
-            return mid
+        if target == list[midpoint]:
+            return midpoint
         # Removes all elements in the right side of the search space if target is lower than the midpoint value
-        elif target < list[mid]:
-            last = mid - 1
+        elif target < list[midpoint]:
+            last = midpoint - 1
         # Removes all elements in the left side of the search space if target is higher than the midpoint value
         else:
-            first = mid + 1
+            first = midpoint + 1
     # Returns None if target does not exist in the list
     return None
 
