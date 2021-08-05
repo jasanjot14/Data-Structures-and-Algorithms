@@ -1,4 +1,4 @@
-# Function to determine if target integer(target) exists in a SORTED list(list) using binary search algorithm
+# Function to determine if a target (target) exists in a SORTED list (list) using an iterative binary search algorithm
 def iterativeBinarySearch(list, target):
     # Determines the search space
     first = 0
