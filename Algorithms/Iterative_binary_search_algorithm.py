@@ -33,9 +33,9 @@ def verify(index):
 
 
 # Example case for if target exists in the list
-result = IterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9)
+result = iterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9)
 verify(result)
 
 # Example case for if target does not exist in the list
-result = IterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 13)
+result = iterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 13)
 verify(result)
