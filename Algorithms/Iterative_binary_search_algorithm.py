@@ -1,8 +1,8 @@
-# Function to determine if target integer(target) exists in a SORTED list(nums) using binary search algorithm
-def binarySearch(nums, target):
+# Function to determine if target integer(target) exists in a SORTED list(list) using binary search algorithm
+def binarySearch(list, target):
     # Determines the search space
     first = 0
-    last = len(nums) - 1
+    last = len(list) - 1
 
     # Loops through the search space
     while first <= last:
@@ -10,10 +10,10 @@ def binarySearch(nums, target):
         # first + (last - first) // 2, is used rather than, (last + first) // 2, in case of integer overflow
         mid = first + (last - first) // 2
         # Returns index of target if found
-        if target == nums[mid]:
+        if target == list[mid]:
             return mid
         # Removes all elements in the right side of the search space if target is lower than the midpoint value
-        elif target < nums[mid]:
+        elif target < list[mid]:
             last = mid - 1
         # Removes all elements in the left side of the search space if target is higher than the midpoint value
         else:
