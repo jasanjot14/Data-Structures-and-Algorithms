@@ -1,5 +1,5 @@
 # Function to determine if a target (target) exists in a SORTED list (list) using a recursive binary search algorithm
-def recursiveBinarySearch(list, target, first, last):
+def recursive_binary_search(list, target, first, last):
 
     # Base condition
     if first > last:
@@ -14,11 +14,11 @@ def recursiveBinarySearch(list, target, first, last):
 
     # Removes all elements in the right side of the search space if target is lower than midpoint
     elif target < list[midpoint]:
-        return recursiveBinarySearch(list, target, first, midpoint - 1)
+        return recursive_binary_search(list, target, first, midpoint - 1)
 
     # Removes all elements in the left side of the search space if target is higher than midpoint
     else:
-        return recursiveBinarySearch(list, target, midpoint + 1, last)
+        return recursive_binary_search(list, target, midpoint + 1, last)
 
 
 # Function to display the results of the implemented algorithm
@@ -35,10 +35,10 @@ def verify(index):
 
 # Example case for if target exists in the list
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-result = recursiveBinarySearch(nums, 9, 0, len(nums) - 1)
+result = recursive_binary_search(nums, 9, 0, len(nums) - 1)
 verify(result)
 
 # Example case for if target does not exist in the list
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-result = recursiveBinarySearch(nums, 13, 0, len(nums) - 1)
+result = recursive_binary_search(nums, 13, 0, len(nums) - 1)
 verify(result)
