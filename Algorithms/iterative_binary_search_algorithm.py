@@ -1,5 +1,5 @@
 # Function to determine if a target (target) exists in a SORTED list (list) using an iterative binary search algorithm
-def iterativeBinarySearch(list, target):
+def iterative_binary_search(list, target):
 
     # Determines the search space
     first = 0
@@ -40,9 +40,9 @@ def verify(index):
 
 
 # Example case for if target exists in the list
-result = iterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9)
+result = iterative_binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 9)
 verify(result)
 
 # Example case for if target does not exist in the list
-result = iterativeBinarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 13)
+result = iterative_binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 13)
 verify(result)
